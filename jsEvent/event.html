@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body onload="window.alert('Page successfully loaded');">
+        <h2>JavaScript HTML Events</h2>
+        <p>Click the button to display the date.</p>
+        <button onclick="displayDate()">The time is?</button>
+        <p id="demo"></p>
+        <p id="para" onmouseover="colorOver()" onmouseleave="colorOut()">
+            This is the demo paragraph for experimenting different JS functions
+        </p>
+<input type="text" id="input1" onfocus="focusevent()"/>  
+<script>  
+    function focusevent()  
+    {  
+        document.getElementById("input1").style.background=" aqua";  
+    }   
+</script>  
+    </body>
+    <script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+function colorOver(){
+    document.getElementById("para").style.color = "red";
+}
+function colorOut(){
+    document.getElementById("para").style.color = "black";
+}
+</script>
+</html>
+
